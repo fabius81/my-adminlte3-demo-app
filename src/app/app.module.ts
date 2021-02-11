@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { SspsComponent } from './ssps/ssps.component';
 
 const appRoutes: Routes = [
   {
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     LoginComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SspsComponent
   ],
   imports: [
     BrowserModule,
