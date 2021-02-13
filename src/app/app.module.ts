@@ -13,10 +13,11 @@ import { UsersComponent } from './users/users.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AuthService } from './auth.service';
 import { AuthGuard } from './auth-guard.service';
+import { UserComponent } from './users/user/user.component';
 
 const appRoutes: Routes = [
   {
-    path: 'dashboard', canActivate:[AuthGuard], component: HeaderComponent, 
+    path: 'dashboard', /*canActivate:[AuthGuard],*/ component: HeaderComponent, 
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     ReportsComponent,
     SspsComponent,
     UsersComponent,
-    ContactsComponent
+    ContactsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
