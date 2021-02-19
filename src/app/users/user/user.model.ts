@@ -1,7 +1,7 @@
 import { Optional } from '@angular/core';   
 
 export class User {
-    private id: string;
+    public id: string;
     public username: string;
     public email: string; // punto di domanda vuol dire che è opzionale
     /*public firstname?: string; 
